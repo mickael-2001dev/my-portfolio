@@ -2,15 +2,42 @@
 .bg-custom{
 	background:  linear-gradient(to right, #DD1029, /*#EE2424,*/ #F14220);
 	/*background: #EE2424;*/
+	/*background: rgba(255, 25, 0, 0.5);*/
+}
+.bg-alpha{
+	background:  linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 30, 0, 0.5));
 }
 body, html {
     height: 100%;
 }
-
+.navbar-brand{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+.navbar-custom{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	/*text-shadow: #000 1px 1px 3px;*/
+}
 .navbar-custom .navbar-nav .nav-link, .navbar-custom .navbar-nav .nav-link:hover{
 	color: white;
 }
-
+.titles{
+	justify-content: center;
+  	align-items: center;
+  	margin-top: -30px;
+}
+.titles h2{
+	margin-bottom: 50px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22pt;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h2.spin-move{
+	animation-name: spin-move;
+	animation-duration: 2s;
+}
 
 .gradient{
 	background:linear-gradient(to right, #DD1029, #EE2424, #F14220);
@@ -30,7 +57,7 @@ body, html {
 	color: #fff;
 	border-radius: 0;
 	border: none;
-	font-family:  'Open Sans', sans-serif;;
+	font-family:  'Open Sans', sans-serif;
 }
 
 .header {
@@ -88,8 +115,14 @@ section {
 }
 .divider{
 	display: flex;
-  justify-content: center;
+  	justify-content: center;
 	width: 55%;
 	background: #fff;
 	height: 5px;
+}
+.paragraph{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	flex-direction: column;
 }
