@@ -21,7 +21,7 @@
 		        <a class="nav-link" href="#about">Sobre</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Habilidades</a>
+		        <a class="nav-link" href="#hability">Habilidades</a>
 		      </li>
 		      <li class="nav-item">
 		        <a class="nav-link" href="#">Contato</a>
@@ -68,6 +68,9 @@
 				
 			</div>
 		</section>
+		<section id="hability">
+			
+		</section>
 	
 	
 
@@ -90,12 +93,21 @@
 	
 
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 	
       $(document).ready(function() {
+
+      	 $('a').click(function(){
+         	 
+         	var href = $(this).attr('href');
+         	 $('html, body').animate({
+		        scrollTop: $(href).offset().top
+		    }, 1000);
+         })
+
          $(window).scroll(function() {
          	//alert($(this).scrollTop());
            if ($(this).scrollTop() > 100) {
@@ -103,6 +115,8 @@
               $('#about-h2').addClass('spin-move');
            }
          });
+
+        
       });
 </script>
 </body>
