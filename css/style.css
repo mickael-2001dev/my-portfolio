@@ -138,8 +138,24 @@ body, html {
   	align-items: center;
 	padding-bottom: 100px;
 }
-.mold{
-	margin-top:3.7%;
+.shape-radio{
+	margin-top: 10%;
+	position: relative;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	border-radius: 100%;
+	background:linear-gradient(to top, #DD1029, #EE2424, #F14220);
+	min-height: 220px;
+	min-width: 220px;
+	/*max-width: 250px;
+	max-height: 250px; */
+}
+.img-shaped{
+		border-radius: 100%;
+}
+/*.mold{
+	margin-top:50px;
 	height: 200px;
 	max-width: 200px;
 	border-radius: 100%;
@@ -153,9 +169,9 @@ body, html {
 	z-index: 999;
 	position: absolute;
 	max-width: 180px;
-}
+}*/
 
-@media(min-width: 505px) {
+/*@media(min-width: 505px) {
 	.mold{
 	margin-top:1.5%;
 	height: 200px;
@@ -172,7 +188,7 @@ body, html {
 		position: absolute;
 		max-width: 180px;
 	}
-}
+}*/
 
 @media (min-width: 992px) {
   .header {
@@ -198,14 +214,22 @@ body, html {
 		font-size: 38pt;
 		margin-bottom: 30px;
 	}
+	/*.mold{
+		margin-top:50px;
+		height: 200px;
+		max-width: 200px;
+		border-radius: 100%;
+		background:linear-gradient(to top, #DD1029, #EE2424, #F14220);
+		z-index: -1;
+		position: relative;
+	}
 	.img-circle{
-		/*margin-top:4%;*/
-		margin-top: 3.7%;
+		margin-right: 50px;
 		border-radius: 100%;
 		z-index: 999;
 		position: absolute;
 		max-width: 180px;
-	}
+	}*/
 }
 
 section {
@@ -229,6 +253,8 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
 }
 #parallax1{
 	padding-top: 0!important;
