@@ -287,6 +287,7 @@ section {
 #code{
 	background-image: url('../img/code2.jpg');
 }
+
 #contact{
 	background-image: url('../img/contact.jpg');
 }
@@ -329,11 +330,30 @@ section {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
+
+.icons {
+	display: inline-block;
+	text-align: center;
+	vertical-align: baseline;
+	font-size: 6rem;
+	margin-bottom: 5%;
+	padding: 3%;
+}
+
+@media(min-width: 992px) {
+	.icons{
+		margin-bottom: none;
+		padding: none;
+	}
+}
+
+
 .all-icons-1{
 	color: #DD1029;
 }
 .all-icons-2{
 	color: #EE2424;
+	
 }
 .all-icons-3{
 	color: #F14220;
