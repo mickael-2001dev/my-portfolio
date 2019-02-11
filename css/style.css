@@ -13,6 +13,7 @@
 	font-weight:normal;
 	font-style:normal;
 }
+
 .bg-custom{
 	background:  linear-gradient(to right, #DD1029, /*#EE2424,*/ #F14220);
 	/*background: #EE2424;*/
@@ -54,7 +55,7 @@ body, html {
     to {transform:rotate(360deg); margin-left:0px;}
   }
 #about-h2{
-	margin-left:800px;
+	/*margin-left:800px;*/
 }
 #about-h2.spin-move{
 	animation-name: spin-move;
@@ -63,7 +64,7 @@ body, html {
 }
 
 #hability-h2{
-	margin-left:800px;
+	/*margin-left:800px;*/
 }
 #hability-h2.spin-move{
 	animation-name: spin-move;
@@ -72,7 +73,7 @@ body, html {
 }
 
 #contact-h2{
-	margin-left:800px;
+	/*margin-left:800px;*/
 }
 #contact-h2.spin-move{
 	animation-name: spin-move;
@@ -291,8 +292,11 @@ section {
 #contact{
 	background-image: url('../img/contact.jpg');
 }
+#projects {
+	background-image: url('../img/code3.jpeg');
+}
 .parallax{
-	height: 300px;
+	height: 400px;
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -304,6 +308,10 @@ section {
 	padding-top: 0!important;
 }
 #parallax2{
+	margin-top: -7%;
+	padding-top: 0!important;
+}
+#parallax3{
 	margin-top: -4%;
 	padding-top: 0!important;
 }
@@ -369,4 +377,28 @@ section {
 .fb-link:hover, #fb-link:active{
 	text-decoration: none;
 	color: rgb(33, 37, 41);
+}
+.fix-item{
+	max-height: 100%;
+}
+.captions{
+	font-family: 'Roboto', sans-serif;
+	font-size: 15pt!important;
+	color:#EAEAEA !important;
+	background-color: rgba(050, 050, 050, 0.9);
+	height: 80px;
+	padding: 10px;
+	max-height: 80px;
+	max-width: 100%;
+	box-shadow: 5px 5px 25px 5px #3A3939;
+}
+.captions h5{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18pt!important;
+}
+.carousel-row{
+	top: 150px;
+	margin-top: 12%;
+	bottom: 100px;
+	margin-bottom: 10%;
 }
