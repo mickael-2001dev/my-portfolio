@@ -15,7 +15,7 @@
 }
 
 .bg-custom{
-	background:  linear-gradient(to right, #DD1029, /*#EE2424,*/ #F14220);
+	background:  linear-gradient(to right, #b70430, #860590);
 	/*background: #EE2424;*/
 	/*background: rgba(255, 25, 0, 0.5);*/
 }
@@ -44,7 +44,6 @@ body, html {
   	padding-bottom: 100px;
 }
 .titles h2{
-	margin-bottom: 50px;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 22pt;
 	font-weight: 700;
@@ -87,6 +86,10 @@ body, html {
 
 #contact-sec{
 	margin-top: -10%!important;
+	color: #fff;
+	background: linear-gradient(to right, #b70430, #860590);
+	padding-top: 10rem;
+	padding-bottom: 2rem;
 }
 
 .gradient{
@@ -108,29 +111,47 @@ body, html {
 }
 
 .header {
-  background-image: url('../img/bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: scroll;
-  position: relative;
-  padding: 154px 0 500px;
+	background-image: url('../img/banner_site.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+	position: relative;
+	min-height:100%;
 }
 
 .main-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index:999;
-  opacity: 1!important;
-  color: #fff;
+	padding: 2.8rem;
+	padding-top: 13rem;
+	display: flex;
+	justify-content: left;
+	align-items: left;
+	flex-direction: column;
+	text-align: left;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	opacity: 1!important;
+	color: #fff;
+	font-family:  'Roboto', sans-serif;
+	max-width: 100%;
+}
+
+.main-text p{
+ 	font-size: 1.1rem;
+}
+
+@media(min-width: 900px) {
+	.main-text p{
+	 	font-size: 1.7rem;
+	}
+
+	.main-text {
+		max-width: 600px;
+		padding-top: 8rem;
+	}
 }
 
 .secondary-text {
@@ -186,7 +207,7 @@ body, html {
   	justify-content: center;
   	align-items: center;
   	border-radius: 100%;
-	background:linear-gradient(to top, #DD1029, #EE2424, #F14220);
+	background:  linear-gradient(to top, #b70430, #860590);
 	min-height: 220px;
 	min-width: 220px;
 	/*max-width: 250px;
@@ -233,13 +254,13 @@ body, html {
 
 @media (min-width: 992px) {
   .header {
-  	background-image: url('../img/bg.jpg');
+  	/*background-image: url('../img/bg.jpg');*/
   	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
     position: relative;
-    padding: 156px 0 500px;
+  	min-height:100%;
   }
   .main-text h1 {
 	color:#fff;
@@ -274,7 +295,7 @@ body, html {
 }
 
 section {
-  padding: 150px 0;
+  padding: 5rem 0rem 5rem 0rem;
 }
 
 
@@ -301,7 +322,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    margin: 1rem 0rem 1rem 0rem;
 
 }
 #parallax1{
@@ -366,10 +387,10 @@ section {
 .all-icons-3{
 	color: #F14220;
 }
-.contact-itens{
-	margin-bottom: 1%;
-	margin-top: 1%;
-	font-size: 14pt;
+.contact-item{
+	margin: 1.3rem;
+	font-size: 1.8rem;
+	font-family: 'Roboto', sans-serif;
 }
 .fb-link{
 	color: rgb(33, 37, 41);
@@ -401,4 +422,81 @@ section {
 	margin-top: 12%;
 	bottom: 100px;
 	margin-bottom: 10%;
+}
+
+.btn-outline {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+	border-radius: 0;
+}
+.divider-hr {
+	border: 1px solid #fff;
+}
+
+.icon-service {
+	position: relative;
+	width: 90px;
+	height: 90px;
+	background:  linear-gradient(to right, #b70430, #860590);
+	border-radius: 100%;
+	margin: 1.1rem;
+	display: inline-block;
+ 	vertical-align: middle;
+ 	box-shadow: 2.5px 5px 9px #999;
+}
+
+.icon-service img {
+	width: auto;
+	position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+ 	vertical-align: middle;
+}
+
+.service {
+	padding: 0.65rem;
+	font-size: 1.1rem;
+	font-family:  'Roboto', sans-serif;
+	height: auto;
+}
+
+.service-text {
+	width: 300px;
+	display:inline-block;
+	vertical-align: middle;
+	padding: 1rem;
+	text-align: center;
+}
+
+@media(min-width: 400px){
+	.service {
+		font-size: 1.20rem;
+	}
+
+	.service-text {
+		width: 400px;
+		text-align: left;
+	}
+}
+
+.svg-icon {
+	fill: #fff;
+}
+
+#site-icon{
+	height: 70px;
+}
+
+#system-icon {
+	height: 55px;
+}
+
+#mobile-icon {
+	height: 55px;
 }
